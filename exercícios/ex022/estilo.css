@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.quadrado {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+}
+
+#q1 {
+    background-color: skyblue;
+}
+
+#q2 {
+    background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+#q3 {
+    background-image: url('imagens-cap19/pattern001.png');
+}
+
+#q4 {
+    background-image: url('imagens-cap19/pattern002.png');
+}
+
+#q5 {
+    background-image: url('imagens-cap19/pattern003.png');
+}
+
+#q6 {
+    background-image: url('imagens-cap19/pattern004.png');
+}
+
+#q7 {
+    background-image: url('imagens-cap19/target001.png');
+}
+
+#q8 {
+    background-image: url('imagens-cap19/wallpaper001.jpg');
+}
+
+#q9 {
+    background-image: url('imagens-cap19/wallpaper002.jpg');
+}
+
+#q10 {
+    background-image: url('imagens-cap19/wallpaper003.jpg');
+}
+
+#q11 {
+    background-image: url('imagens-cap19/wallpaper004.jpg');
+}
+
+#q12{
+    background-image: url('imagens-cap19/wallpaper005.jpg');
+}
+
+#q13 {
+    background-image: url('imagens-cap19/wallpaper006.jpg');
+}
