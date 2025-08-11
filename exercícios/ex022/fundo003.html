@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição de imagem de fundo</title>
+    <style>
+        div.bloco {
+            background-image: url('imagens-cap19/wallpaper002.jpg');
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+        }
+        #q1 {
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+        #q2 {
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+        #q3 {
+            background-position: left bottom;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="bloco" id="q1"></div>
+        <div class="bloco" id="q2"></div>
+        <div class="bloco" id="q3"></div>
+</body>
+</html>
