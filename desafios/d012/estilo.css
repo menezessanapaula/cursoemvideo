@@ -6,7 +6,14 @@
     padding: 0;
 }
 
+:root {
+    --fonte0: verdana, geneva, tahoma, sans-serif;
+    --fonte1: 'Passion One', cursive;
+    --fonte2: 'Sriracha', cursive;
+}
+
 html, body {
+    font-family: var(--fonte0);
     min-height: 100vh; /*Tamanho minimo da altura*/
     background-color: darkgrey;
 }
@@ -20,6 +27,7 @@ html, body {
  header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte1);
  }
 
  header > p {
@@ -42,6 +50,11 @@ html, body {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+ }
+
+ section > p {
+    padding-bottom: 2em;
  }
 
  section.normal {
@@ -52,9 +65,32 @@ html, body {
  section.imagem {
     background-color: grey;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+    background-size: cover;
+    background-attachment: fixed;
  }
 
  section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.479);
-    width: 400px;
+    text-shadow: 1px 1px 0px black;
+ }
+
+ section#img001 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+ }
+
+ section#img002 {
+    background-image: url(imagens/background002.jpg);
+    background-position: left center;
+ }
+
+ @media (max-width: 600px) {
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.9em;
+    }
  }
