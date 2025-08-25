@@ -63,7 +63,7 @@ html, body {
  }
 
  section.imagem {
-    background-color: grey;
+    background-color: rgb(184, 173, 173);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
     background-size: cover;
@@ -73,7 +73,7 @@ html, body {
  section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.315);
     text-shadow: 1px 1px 0px black;
  }
 
