@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de revisão de HTML5 e CSS3"> <!--Descrição da página para o buscador-->
+    <link rel="shortcut icon" href="favicon/Diegofelipemoreno-Corpse-Bride-Otra.128.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Revisão de tags e propriedades no HTML5 e CSS3</title>
+</head>
+<body>
+    <header> <!--Cabeçalho de página-->
+        <h1>Revisão de HTML5 e CSS3</h1>
+        <nav> <!--Menu de navegação-->
+                <a href="#estrutura">Estrutura</a>
+                <a href="#semantica">Semântica</a>
+                <a href="#tags">Tags Semânticas</a>
+                <a href="#guia-html">Guia HTML</a>
+                <a href="#estilo">Estilo</a>
+                <a href="#guia-css">Guia CSS</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="estrutura"> <!--Seção da página-->
+            <h2>Estrutura da página</h2>
+            <p>HTML (HyperText Markup Language) é a <mark>linguagem de marcação</mark> usada para criar o conteúdo e a estrutura de uma página web.</p>
+            <h3>Características principais</h3>
+            <ul>
+                <li>Usa <strong>tags</strong> para marcar e organizar o conteúdo (&lt;h1&gt;, &lt;p&gt;, &lt;div&gt;).</li>
+                <li>Define a estrutura, mas não cuida do estilo (isso é função do CSS).</li>
+                <li>A maioria das tags vem em pares: abertura &lt;tag&gt; e fechamento &lt;/tag&gt;.</li>
+            </ul>
+        </section>
+        <section id="semantica"> 
+            <h2>Semântica da página</h2>
+            <p><strong>HTML semântico</strong> é quando usamos tags que têm significado próprio, para indicar o papel do conteúdo na página.</p>
+            <p>Isso ajuda:</p>
+            <ul>
+                <li><strong>Leitores de tela</strong> (acessibilidade)</li>
+                <li><strong>Motores de busca</strong> (SEO)</li>
+                <li>Outros desenvolvedores <strong>(código legível)</strong></li>
+                <li><strong>Você no futuro</strong> (manutenção mais fácil)</li>
+            </ul>
+            <p>Por exemplo:</p>
+            <ul>
+                <li><strong>&lt;div id="menu"&gt;</strong> não diz nada sobre o que é o elemento.</li>
+                <li><strong>&lt;nav&gt;</strong> informa que é um menu de navegação.</li>
+            </ul>
+        </section>
+        <section id="tags">
+            <h2>Principais tags semânticas</h2>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Função</th>
+                    <th>Exemplo de uso</th>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Cabeçalho de página ou seção</td>
+                    <td>Logo, título, menu</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Navegação principal ou secundária</td>
+                    <td>Menu de links</td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Conteúdo principal da página</td>
+                    <td>Artigos, texto</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Seção temática</td>
+                    <td>Blocos de conteúdo relacionados</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Conteúdo independente</td>
+                    <td>Post de blog, notícia</td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Conteúdo lateral ou extra</td>
+                    <td>Barra lateral, anúncios</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Rodapé da página ou seção</td>
+                    <td>Créditos, links finais</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;+&lt;figcaption&gt;</td>
+                    <td>Imagem com legenda</td>
+                    <td>Foto e descrição</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Texto destacado</td>
+                    <td>Palavras-chave</td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Data ou hora</td>
+                    <td>&lt;time datetime="2025-08-12"&gt;12/08/2025&lt;/time&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>Informações de contato</td>
+                    <td>Endereço, e-mail</td>
+                </tr>
+            </table>
+        </section>
+        <section id="guia-html">
+            <h2>Guia prático - HTML</h2>
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Nome</th>
+                    <th>Função</th>
+                    <th>Exemplo</th>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt; a &lt;h6&gt;</td>
+                    <td>Títulos</td>
+                    <td>Estrutura hierárquica de títulos</td>
+                    <td>&lt;h1&gt;Principal&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Parágrafo</td>
+                    <td>Texto corrido</td>
+                    <td>&lt;p&gt;Texto corrido&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Link</td>
+                    <td>Redireciona para outra página ou seção</td>
+                    <td>&lt;a href="#"&gt;Clique aqui&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Imagem</td>
+                    <td>Exibe uma imagem</td>
+                    <td>&lt;img src="foto.jpg" alt="Descrição"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;/&lt;ol&gt;/&lt;li&gt;</td>
+                    <td>Lista</td>
+                    <td>Listas ordenadas e não ordenadas</td>
+                    <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Divisão</td>
+                    <td>Container genérico de bloco</td>
+                    <td>&lt;div&gt;Conteúdo&lt;/div&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Texto em linha</td>
+                    <td>Destaca um trecho dentro do texto</td>
+                    <td>&lt;span&gt;texto&lt;/span&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>Formulário</td>
+                    <td>Agrupa campos de entrada</td>
+                    <td>&lt;form&gt;...&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>Campo</td>
+                    <td>Entrada de dados</td>
+                    <td>&lt;input type="text"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;button&gt;</td>
+                    <td>Botão</td>
+                    <td>Ação clicável</td>
+                    <td>&lt;button&gt;Enviar&lt;/button&gt;</td>
+                </tr>
+            </table>
+        </section>
+        <section id="estilo">
+            <h2>Estilo da página</h2>
+            <p>CSS (Cascading Style Sheets) é a linguagem de estilo que define a aparência da página (cores, fontes, espaçamento, layout...)</p>
+            <h3>Características principais</h3>
+            <ul>
+                <li>Aplica o estilo ao HTML</li>
+                <li>Pode ser usado inline, interno ou externo (o mais comum é externo .css)</li>
+                <li>Usa seletores para escolher elementos (p, .classe, #id)</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Formas de aplicação</h3>
+            <article> <!--Conteúdo independente-->
+                <h4>A forma mais simples de aplicar estilos: CSS inline style</h4>
+                <p>É a modificação pontual no código.</p>
+            </article>
+            <article>
+                <h4>CSS internal style</h4>
+                <p>Para aplicar estilos de forma mais dinâmica e prática, podemos adicionar uma tag &lt;style&gt; dentro da área &lt;head&gt; do nosso documento HTML local.</p>
+            </article>
+            <article>
+                <h4>A técnica mais versátil: CSS external style</h4>
+                <p>Manter as folhas de estilo fora do código HTML, além de uma maior organização, faz com que tudo seja reaproveitado de maneira mais eficiente nas outras páginas do site. Para isso, utilizamos a tag &lt;link&gt; especialmente configurada para trabalhar com arquivos externos de estilo. Essa tag deve ser colocada dentro da área &lt;head&gt; do seu documento HTML.</p>
+            </article>
+            <article>
+                <h4>Qual utilizar?</h4>
+                <p>A técnica CSS inline style deve ser evitada ao máximo. Ela acaba deixando seu código meio confuso, misturando a parte HTML e CSS em uma mesma linha. Já a técnica CSS internal style organiza melhor seu código, separando o conteúdo e estilo em duas áreas bem definidas do seu documento. Opte também por essa técnica apenas se a quantidade de configurações de estilo for pequena/média. Usar muitos seletores com muitas declarações vai fazer com que seu arquivo .html fique muito grande e seu conteúdo seja visualmente jogado lá pra baixo, dificultando manutenções futuras.</p>
+                <p>Por fim, opte sempre pela técnica CSS external style sempre que seu estilo for usado em várias páginas dentro do seu site. Usando a tag &lt;link&gt; em várias páginas, você pode compartilhar o mesmo estilo entre elas e não vai precisar ficar alterando vários arquivos quando o seu cliente solicitar uma pequena mudança no tom de uma determinada cor, por exemplo.</p>
+                <p>De forma resumida, guarde isso:</p>
+                <ul>
+                    <li>CSS externo: use sempre que puder.</li>
+                    <li>CSS interno: use para pequenas configurações.</li>
+                    <li>CSS inline: procure evitar.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="guia-css">
+            <h2>Guia rápido - CSS</h2>
+            <table>
+                <tr>
+                    <th>Propriedade</th>
+                    <th>Função</th>
+                    <th>Exemplo</th>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Cor de texto</td>
+                    <td>color: red;</td>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>Cor de fundo</td>
+                    <td>background-color: lightblue;</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>Tamanho da fonte</td>
+                    <td>font-size: 20px;</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>Tipo de fonte</td>
+                    <td>font-family: Arial;</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>Peso da fonte</td>
+                    <td>font-weight: bold;</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>Alinhamento de texto</td>
+                    <td>text-align: center;</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>Espaçamento externo</td>
+                    <td>margin: 20px;</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>Espaçamento interno</td>
+                    <td>padding: 10px;</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>Borda do elemento</td>
+                    <td>border: 1px solid #000;</td>
+                </tr>
+                <tr>
+                    <td>border-radius</td>
+                    <td>Arredondamento da borda</td>
+                    <td>border-radius: 10px;</td>
+                </tr>
+                <tr>
+                    <td>width/height</td>
+                    <td>Largura e altura</td>
+                    <td>width: 200px;<br>height: 100px;</td>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Tipo de exibição</td>
+                    <td>display: flex;</td>
+                </tr>
+                <tr>
+                    <td>flex</td>
+                    <td>Ajuste de itens flex</td>
+                    <td>flex: 1;</td>
+                </tr>
+                <tr>
+                    <td>justify-content</td>
+                    <td>Alinhamento horizontal (flex)</td>
+                    <td>justify-content: center;</td>
+                </tr>
+                <tr>
+                    <td>align-items</td>
+                    <td>Alinhamento vertical (flex)</td>
+                    <td>align-items: center;</td>
+                </tr>
+                <tr>
+                    <td>gap</td>
+                    <td>Espaço entre itens</td>
+                    <td>gap: 10px;</td>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>Posição do elemento</td>
+                    <td>position: absolute;</td>
+                </tr>
+                <tr>
+                    <td>top/left/right/bottom</td>
+                    <td>Ajuste de posição</td>
+                    <td>top: 0;<br>left: 0;</td>
+                </tr>
+                <tr>
+                    <td>z-index</td>
+                    <td>Camada (sobreposição)</td>
+                    <td>z-index: 10;</td>
+                </tr>
+                <tr>
+                    <td>overflow</td>
+                    <td>Comportamento de conteúdo extra</td>
+                    <td>overflow: hidden;</td>
+                </tr>
+                <tr>
+                    <td>box-shadow</td>
+                    <td>Sombra</td>
+                    <td>box-shadow: 2px 2px 5px gray;</td>
+                </tr>
+                <tr>
+                    <td>opacity</td>
+                    <td>Transparência</td>
+                    <td>opacity: 0.5;</td>
+                </tr>
+                <tr>
+                    <td>cursor</td>
+                    <td>Tipo de cursor</td>
+                    <td>cursor: pointer;</td>
+                </tr>
+            </table>
+        </section>
+        <aside> <!--Conteúdo lateral-->
+            <h2>Dica</h2>
+            <p>Utilize sempre tags semânticas para melhorar a acessibilidade e o SEO do seu site!</p>
+        </aside>
+    </main>
+    <footer> <!--Rodapé da página-->
+        <address> <!--Informações de contato-->
+            Página criada para revisão de HTML5 e CSS3.<br>
+            Contato: <a href="mailto:ap.souzamenezes@gmail.com">ap.souzamenezes@gmail.com</a>
+        </address>
+        <p>&copy; 2025 - Ana Paula</p>
+    </footer>
+</body>
+</html>
