@@ -8,17 +8,26 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
+        tbody > tr:nth-child(odd) {
+            background-color: #f0f0f000;
+        }
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color:#f0f0f000;
+            z-index: -1;
+        } 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(83, 81, 81);
             color: white;
         }
         .num {
